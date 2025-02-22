@@ -35,7 +35,7 @@ body {
     flex-grow: 1;
   }
   
-  /* Kayıt ve Giriş Butonları */
+  /* Kayıt ve Giriş Butonları - Mavi Renk */
   .auth-buttons {
     display: flex;
     gap: 15px;
@@ -45,7 +45,7 @@ body {
   
   .btn {
     padding: 10px 20px;
-    background-color: #28a745; /* Yeşil buton rengi */
+    background-color: rgba(0, 91, 181, 0.7); /* Butonlar mavi tonunda */
     color: white;
     border: none;
     border-radius: 5px;
@@ -54,10 +54,10 @@ body {
   }
   
   .btn:hover {
-    background-color: #218838; /* Hover durumunda koyu yeşil */
+    background-color: rgba(0, 91, 181, 1); /* Hoverda daha opak mavi */
   }
   
-  /* Menü Stili - Mavi Tonları ve Opaklık */
+  /* Menü Stili - Farklı Mavi Tonu */
   nav {
     background-color: #003366; /* Menü kısmı farklı ton mavi */
     text-align: center;

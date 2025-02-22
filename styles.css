@@ -3,47 +3,47 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-    color: #ffffff;
+    background-color: #ffffff; /* Orta kısmı beyaz yapıyoruz */
+    color: #ffffff; /* Genel yazı rengi beyaz */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-}
-
-/* Header Stili */
-header {
-    background-color: #005bb5;
+  }
+  
+  /* Header Stili - Üst Kısım */
+  header {
+    background-color: #005bb5; /* Üst kısmı mavi tonlarında */
     color: white;
     padding: 20px 0;
     text-align: center;
     position: relative;
-}
-
-.header-container {
+  }
+  
+  .header-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-}
-
-header h1 {
+  }
+  
+  header h1 {
     font-size: 2.5rem;
     margin: 0;
     text-align: center;
-}
-
-/* Kayıt ve Giriş Butonları - Sayfanın Sağında */
-.auth-buttons {
+    flex-grow: 1;
+  }
+  
+  /* Kayıt ve Giriş Butonları - Yeşil Renk */
+  .auth-buttons {
     display: flex;
     gap: 15px;
     position: absolute;
     right: 20px;
-    top: 20px;
-}
-
-.auth-buttons .btn {
+  }
+  
+  .auth-buttons .btn {
     padding: 10px 20px;
     background-color: #28a745; /* Yeşil renk */
     color: white;
@@ -51,106 +51,79 @@ header h1 {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
-}
-
-.auth-buttons .btn:hover {
+  }
+  
+  .auth-buttons .btn:hover {
     background-color: #218838; /* Hoverda daha koyu yeşil */
-}
-
-/* Menü Stili */
-nav {
-    background-color: #003366;
+  }
+  
+  /* Menü Stili - Farklı Mavi Tonu */
+  nav {
+    background-color: #003366; /* Menü kısmı farklı ton mavi */
     text-align: center;
     padding: 15px 0;
-}
-
-nav ul {
+  }
+  
+  nav ul {
     list-style: none;
     padding: 0;
-}
-
-nav ul li {
+  }
+  
+  nav ul li {
     display: inline;
     margin-right: 20px;
-}
-
-nav ul li a {
+  }
+  
+  /* Menü Butonları - Opaklık ve Blur Efekti */
+  nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
-    background-color: rgba(0, 91, 181, 0.4);
+    background-color: rgba(0, 91, 181, 0.4); /* Opaklık oldukça düşük */
     padding: 10px 20px;
     border-radius: 5px;
-    transition: all 0.3s ease;
-    backdrop-filter: blur(5px);
-}
-
-nav ul li a:hover {
-    color: white;
+    transition: all 0.3s ease; /* Animasyon için geçiş efekti */
+    backdrop-filter: blur(5px); /* Blur efekti ekledik */
+  }
+  
+  nav ul li a:hover {
+    color: white; /* Hoverda yazı rengi beyaz */
     text-decoration: underline;
-    transform: scale(1.1);
-    background-color: rgba(0, 91, 181, 0.6);
-    backdrop-filter: blur(8px);
-}
-
-/* Anasayfa İçeriği */
-section#anasayfa {
+    transform: scale(1.1); /* Hover durumunda butonu biraz büyütme */
+    background-color: rgba(0, 91, 181, 0.6); /* Hoverda opaklık artar */
+    backdrop-filter: blur(8px); /* Hoverda blur efekti biraz daha yoğunlaşır */
+  }
+  
+  /* Ana Sayfa İçeriği */
+  section#anasayfa {
     padding: 30px;
     text-align: center;
     flex-grow: 1;
-    background-color: #ffffff;
-    color: #333;
-}
-
-/* Orta Kısım İçeriği */
-.content {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-}
-
-.content-item {
-    width: 30%;
-    text-align: center;
-}
-
-.content-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.content-item h3 {
-    margin-top: 10px;
-    font-size: 1.5rem;
-    color: #005bb5;
-}
-
-.content-item p {
-    font-size: 1rem;
-    color: #555;
-}
-
-/* Footer */
-footer {
-    background-color: #005bb5;
+    background-color: #ffffff; /* Orta kısmı beyaz bırakıyoruz */
+    color: #333; /* Yazı rengi siyah veya koyu gri */
+  }
+  
+  /* Footer Stili - Alt Kısım */
+  footer {
+    background-color: #005bb5; /* Alt kısmı mavi tonlarında */
     color: white;
     text-align: center;
     padding: 20px;
     position: relative;
     bottom: 0;
     width: 100%;
-}
-
-footer p {
+  }
+  
+  footer p {
     margin: 5px 0;
-}
-
-footer a {
+  }
+  
+  footer a {
     color: #66ccff;
     text-decoration: none;
-}
-
-footer a:hover {
+  }
+  
+  footer a:hover {
     text-decoration: underline;
-}
+  }
+                                

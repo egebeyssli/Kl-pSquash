@@ -3,15 +3,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
-    color: #333;
+    background-color: #ffffff; /* Orta kısmı beyaz yapıyoruz */
+    color: #ffffff; /* Genel yazı rengi beyaz */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
   
-  /* Header Stili */
+  /* Header Stili - Üst Kısım */
   header {
-    background-color: #003366;
+    background-color: #005bb5; /* Üst kısmı mavi tonlarında */
     color: white;
-    padding: 15px 0;
+    padding: 20px 0;
     text-align: center;
     position: relative;
   }
@@ -26,34 +29,37 @@ body {
   }
   
   header h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 0;
+    text-align: left;
+    flex-grow: 1;
   }
   
-  /* Kayıt ve Giriş Butonları */
+  /* Kayıt ve Giriş Butonları - Yeşil Renk */
   .auth-buttons {
     display: flex;
-    gap: 10px;
+    gap: 15px;
   }
   
   .btn {
-    padding: 8px 16px;
-    background-color: #005bb5;
+    padding: 10px 20px;
+    background-color: #28a745; /* Butonları yeşil renkte yapıyoruz */
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1rem;
   }
   
   .btn:hover {
-    background-color: #004494;
+    background-color: #218838; /* Hover durumunda koyu yeşil */
   }
   
-  /* Menü Stili */
+  /* Menü Stili - Farklı Mavi Tonu */
   nav {
-    background-color: #004080;
+    background-color: #003366; /* Menü kısmı farklı ton mavi */
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
   }
   
   nav ul {
@@ -69,16 +75,26 @@ body {
   nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   
   nav ul li a:hover {
     text-decoration: underline;
+    color: #66ccff; /* Hover durumunda mavi alt çizgi efekti */
   }
   
-  /* Footer Stili */
+  /* Ana Sayfa İçeriği */
+  section#anasayfa {
+    padding: 30px;
+    text-align: center;
+    flex-grow: 1;
+    background-color: #ffffff; /* Orta kısmı beyaz bırakıyoruz */
+    color: #333; /* Yazı rengi siyah veya koyu gri */
+  }
+  
+  /* Footer Stili - Alt Kısım */
   footer {
-    background-color: #003366;
+    background-color: #005bb5; /* Alt kısmı mavi tonlarında */
     color: white;
     text-align: center;
     padding: 20px;

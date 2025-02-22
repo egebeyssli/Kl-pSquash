@@ -8,6 +8,8 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden; /* Yatay kaydırma çubuğu engelleniyor */
+    overflow-y: auto; /* Yalnızca dikey kaydırma çubuğuna izin veriliyor */
 }
 
 /* Header Stili */
@@ -100,6 +102,11 @@ section#anasayfa {
     flex-grow: 1;
     background-color: #ffffff;
     color: #333;
+    height: calc(100vh - 150px); /* Header ve Footer dışındaki alan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 /* Footer */
@@ -112,7 +119,6 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
 footer p {
     margin: 5px 0;
 }
@@ -124,4 +130,4 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-}
+} 

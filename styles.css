@@ -4,46 +4,46 @@ body {
     margin: 0;
     padding: 0;
     background-color: #ffffff; /* Orta kısmı beyaz yapıyoruz */
-    color: #ffffff; /* Genel yazı rengi beyaz */
+    color: #333333; /* Yazı rengi koyu gri */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-  }
-  
-  /* Header Stili - Üst Kısım */
-  header {
+}
+
+/* Header Stili - Üst Kısım */
+header {
     background-color: #005bb5; /* Üst kısmı mavi tonlarında */
     color: white;
     padding: 20px 0;
     text-align: center;
     position: relative;
-  }
-  
-  .header-container {
+}
+
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-  }
-  
-  header h1 {
+}
+
+header h1 {
     font-size: 2.5rem;
     margin: 0;
     text-align: center;
     flex-grow: 1;
-  }
-  
-  /* Kayıt ve Giriş Butonları - Yeşil Renk */
-  .auth-buttons {
+}
+
+/* Kayıt ve Giriş Butonları - Yeşil Renk */
+.auth-buttons {
     display: flex;
     gap: 15px;
     position: absolute;
     right: 20px;
-  }
-  
-  .auth-buttons .btn {
+}
+
+.auth-buttons .btn {
     padding: 10px 20px;
     background-color: #28a745; /* Yeşil renk */
     color: white;
@@ -51,31 +51,31 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
-  }
-  
-  .auth-buttons .btn:hover {
+}
+
+.auth-buttons .btn:hover {
     background-color: #218838; /* Hoverda daha koyu yeşil */
-  }
-  
-  /* Menü Stili - Farklı Mavi Tonu */
-  nav {
+}
+
+/* Menü Stili - Farklı Mavi Tonu */
+nav {
     background-color: #003366; /* Menü kısmı farklı ton mavi */
     text-align: center;
     padding: 15px 0;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style: none;
     padding: 0;
-  }
-  
-  nav ul li {
+}
+
+nav ul li {
     display: inline;
     margin-right: 20px;
-  }
-  
-  /* Menü Butonları - Opaklık ve Blur Efekti */
-  nav ul li a {
+}
+
+/* Menü Butonları - Opaklık ve Blur Efekti */
+nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
@@ -84,27 +84,129 @@ body {
     border-radius: 5px;
     transition: all 0.3s ease; /* Animasyon için geçiş efekti */
     backdrop-filter: blur(5px); /* Blur efekti ekledik */
-  }
-  
-  nav ul li a:hover {
+}
+
+nav ul li a:hover {
     color: white; /* Hoverda yazı rengi beyaz */
     text-decoration: underline;
     transform: scale(1.1); /* Hover durumunda butonu biraz büyütme */
     background-color: rgba(0, 91, 181, 0.6); /* Hoverda opaklık artar */
     backdrop-filter: blur(8px); /* Hoverda blur efekti biraz daha yoğunlaşır */
-  }
-  
-  /* Ana Sayfa İçeriği */
-  section#anasayfa {
-    padding: 30px;
+}
+
+/* Hero Section */
+#hero {
+    background-color: #003366; /* Hero kısmı için mavi arka plan */
+    color: white;
     text-align: center;
-    flex-grow: 1;
-    background-color: #ffffff; /* Orta kısmı beyaz bırakıyoruz */
-    color: #333; /* Yazı rengi siyah veya koyu gri */
-  }
-  
-  /* Footer Stili - Alt Kısım */
-  footer {
+    padding: 80px 20px;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+#hero .btn {
+    background-color: #28a745;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+#hero .btn:hover {
+    background-color: #218838;
+}
+
+/* Hizmetlerimiz */
+#services {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+}
+
+.service-item {
+    margin: 20px 0;
+}
+
+.service-item h3 {
+    font-size: 1.8rem;
+    color: #003366;
+}
+
+.service-item p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Neden Squash? */
+#why-squash {
+    background-color: #f0f0f0; /* Arka planı gri tonunda yapıyoruz */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#why-squash h2 {
+    font-size: 2.5rem;
+}
+
+#why-squash ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+#why-squash ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Başarılarımız */
+#achievements {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #e3f2fd; /* Mavi tonlarında arka plan */
+}
+
+#achievements h2 {
+    font-size: 2.5rem;
+}
+
+#achievements p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Üye Yorumları */
+#testimonials {
+    background-color: #fff; /* Beyaz arka plan */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#testimonials blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin: 20px 0;
+    padding: 20px;
+    border-left: 5px solid #28a745;
+}
+
+#testimonials footer {
+    margin-top: 10px;
+    color: #666;
+}
+
+/* Footer Stili - Alt Kısım */
+footer {
     background-color: #005bb5; /* Alt kısmı mavi tonlarında */
     color: white;
     text-align: center;
@@ -112,18 +214,17 @@ body {
     position: relative;
     bottom: 0;
     width: 100%;
-  }
-  
-  footer p {
+}
+
+footer p {
     margin: 5px 0;
-  }
-  
-  footer a {
+}
+
+footer a {
     color: #66ccff;
     text-decoration: none;
-  }
-  
-  footer a:hover {
+}
+
+footer a:hover {
     text-decoration: underline;
-  }
-  
+}

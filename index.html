@@ -1,91 +1,156 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Tema Squash Academy</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+/* Genel Stil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
-  <!-- Header -->
-  <header>
-    <div class="header-container">
-      <h1>Tema Squash Academy</h1>
-      <div class="auth-buttons">
-        <button class="btn">Kayıt Ol</button>
-        <button class="btn">Giriş</button>
-      </div>
-    </div>
-  </header>
+/* Header Stili */
+header {
+    background-color: #005bb5;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
 
-  <!-- Menü -->
-  <nav>
-    <ul>
-      <li><a href="#anasayfa" class="btn">Anasayfa</a></li>
-      <li><a href="#lig-siralamasi" class="btn">Lig Sıralaması</a></li>
-      <li><a href="#turnuva-takvimi" class="btn">Turnuva Takvimi</a></li>
-      <li><a href="#mac-teklifleri" class="btn">Maç Teklifleri</a></li>
-      <li><a href="#duyurular" class="btn">Duyurular</a></li>
-    </ul>
-  </nav>
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-  <!-- Anasayfa İçeriği -->
-  <section id="anasayfa">
-    <h2>Hoş Geldiniz!</h2>
-    <p>Squash dünyasında lider olmaya adım atmak için doğru yerdesiniz.</p>
-    <p>Squash derslerimizle ilgileniyorsanız, kayıt için <strong><a href="#">buraya</a></strong> tıklayın.</p>
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    text-align: center;
+}
 
-    <!-- Anasayfa Orta Kısım: Resimler ve Metin -->
-    <div class="content">
-      <div class="content-item">
-        <img src="turnuva.jpg" alt="Turnuva">
-        <h3>Turnuva Takvimi</h3>
-        <p>Önümüzdeki turnuvaların tarihleri burada olacak.</p>
-      </div>
-      <div class="content-item">
-        <img src="haberler.jpg" alt="Haberler">
-        <h3>Haberler</h3>
-        <p>Squash dünyasında neler olup bittiğini öğrenin.</p>
-      </div>
-      <div class="content-item">
-        <img src="basarilar.jpg" alt="Başarılar">
-        <h3>Başarılarımız</h3>
-        <p>Academy'nin kazandığı ödüller ve başarıları buradan inceleyin.</p>
-      </div>
-    </div>
-  </section>
+/* Kayıt ve Giriş Butonları - Sayfanın Sağında */
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
 
-  <!-- Lig Sıralaması -->
-  <section id="lig-siralamasi">
-    <h2>Lig Sıralaması</h2>
-    <p>Lig sıralamaları burada yer alacak.</p>
-  </section>
+.auth-buttons .btn {
+    padding: 10px 20px;
+    background-color: #28a745; /* Yeşil renk */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
 
-  <!-- Turnuva Takvimi -->
-  <section id="turnuva-takvimi">
-    <h2>Turnuva Takvimi</h2>
-    <p>Önümüzdeki turnuvaların tarihleri burada olacak.</p>
-  </section>
+.auth-buttons .btn:hover {
+    background-color: #218838; /* Hoverda daha koyu yeşil */
+}
 
-  <!-- Maç Teklifleri -->
-  <section id="mac-teklifleri">
-    <h2>Maç Teklifleri</h2>
-    <p>Buradan maç tekliflerinizi iletebilirsiniz.</p>
-  </section>
+/* Menü Stili */
+nav {
+    background-color: #003366;
+    text-align: center;
+    padding: 15px 0;
+}
 
-  <!-- Duyurular -->
-  <section id="duyurular">
-    <h2>Duyurular</h2>
-    <p>En son duyurular burada yer alacak.</p>
-  </section>
+nav ul {
+    list-style: none;
+    padding: 0;
+}
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Tema Squash Academy. Tüm hakları saklıdır.</p>
-    <p><a href="#">İletişim</a> | <a href="#">Gizlilik Politikası</a></p>
-  </footer>
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
 
-</body>
-</html>
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-color: rgba(0, 91, 181, 0.4);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+nav ul li a:hover {
+    color: white;
+    text-decoration: underline;
+    transform: scale(1.1);
+    background-color: rgba(0, 91, 181, 0.6);
+    backdrop-filter: blur(8px);
+}
+
+/* Anasayfa İçeriği */
+section#anasayfa {
+    padding: 30px;
+    text-align: center;
+    flex-grow: 1;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Orta Kısım İçeriği */
+.content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.content-item {
+    width: 30%;
+    text-align: center;
+}
+
+.content-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.content-item h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #005bb5;
+}
+
+.content-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #005bb5;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #66ccff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

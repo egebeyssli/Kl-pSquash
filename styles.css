@@ -74,15 +74,22 @@ body {
     margin-right: 20px;
   }
   
+  /* Menü Butonları - Opaklık ve Hover Efekti */
   nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
+    background-color: rgba(0, 91, 181, 0.5); /* Mavi renk ile opaklık */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Animasyon için geçiş efekti */
   }
   
   nav ul li a:hover {
     text-decoration: underline;
     color: #66ccff; /* Hover durumunda mavi alt çizgi efekti */
+    transform: scale(1.1); /* Hover durumunda butonu biraz büyütme */
+    background-color: rgba(0, 91, 181, 0.8); /* Hoverda opaklığı arttırma */
   }
   
   /* Ana Sayfa İçeriği */
